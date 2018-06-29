@@ -35,6 +35,7 @@ int main(void) {
     //requireUserToGiveDataOfNameAndAge();
     createArraysWithTwoDimension();
     //searchTheStringInArray() It's too hard...
+    initializeInformationOfMyExGirlfriend();
     
     
     extern int externalInteger;

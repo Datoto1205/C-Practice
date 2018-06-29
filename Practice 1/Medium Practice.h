@@ -69,5 +69,44 @@ int printOutToTXTFile(void) {
 
 
 
+// Struct
+struct informationOfMyExGirlfriend {
+    char name[100];
+    int age;
+};
+
+struct informationOfMyExGirlfriend first = {"Cindy", 21}; /* Initialize the struct outside the function. */
+
+struct informationOfMyExGirlfriend convenience[] = {
+    {"Cindy", 21},
+    {"Tina", 21},
+    {"Michelle", 20},
+}; /* Another way to declare and initialize the struct with several values. */
+
+int initializeInformationOfMyExGirlfriend(void) {
+    
+    struct informationOfMyExGirlfriend second;
+    strcpy(second.name, "Tina");
+    second.age = 21;
+    struct informationOfMyExGirlfriend third = {"Michelle", 20};
+    /*Initialize the struct inside the function*/
+    
+    printf("\n%s is %d years old in 2018.\n", first.name, first.age);
+    printf("%s is %d years old in 2018.\n", second.name, second.age);
+    printf("%s is %d years old in 2018.\n", third.name, third.age);
+    
+    printf("\n");
+    for (int i = 0; i < 3; i++) {
+        printf("Beautiful %s is %d years old in 2018.\n", convenience[i].name, convenience[i].age);
+    }
+    
+    return 0;
+}
+// 1. We could use struct to assign detailed properties of data.
+// 2. After we declare the architecture of the struct, we could give names and values to the struct (initialization); we even could use matrix & loop to do it more conveniently.
+// 3. Remember to add ";" at the end of struct.
+// 4. We need to use strcpy() function to assign the string data to the struct, or we would face the warning if we use the normal printf() function.
+
+
 
 #endif /* Medium_Practice_h */
