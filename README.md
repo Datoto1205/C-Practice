@@ -1,3 +1,4 @@
+![1 300x](https://user-images.githubusercontent.com/32284698/42152469-c6473600-7e12-11e8-8065-bbadddde609c.png)
 ## Introduction
 
 In order to learn the knowledge about procedure-oriented, I tried to learn how to write C codes. I put the codes I wrote during the process of practice in the folder of 'Practice 1'. After I obtained some fundamental knowledge about C, which included control flow, struct, and array, I tried to answer the questions of programming found on LeetCode. I selected some questions to answer, and I put the codes of those questions in the folder of 'LeetCode Practice Report in C'.
