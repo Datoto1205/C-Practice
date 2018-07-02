@@ -9,16 +9,13 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "math.h"
+
 #include "instruction text.h"
 #include "jewels and Stones.h"
 #include "judgeCircle.h"
 #include "reverseString.h"
-
-
-
-
-
-
+#include "addTwoNumbers.h"
 
 int main(void) {
     
@@ -39,6 +36,9 @@ int main(void) {
     reverseString("Hello");
     reverseString("god");
     reverseString("net");
+    
+    printOutParagraphBetweenQuestionThreeAndFour();
+    addTwoNumbers();
     
     return 0;
 }

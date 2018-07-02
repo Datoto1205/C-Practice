@@ -27,6 +27,7 @@
 		1B63B33020C9260A009A6E3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1B6AFB0020D8CF01003A3F2B /* Basic Practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Basic Practice.h"; sourceTree = "<group>"; };
 		1B90C97620E2251500D6212C /* Medium Practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medium Practice.h"; sourceTree = "<group>"; };
+		1B9B254D20E767D000453585 /* Hard Practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hard Practice.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				1B63B33020C9260A009A6E3F /* main.c */,
 				1B6AFB0020D8CF01003A3F2B /* Basic Practice.h */,
 				1B90C97620E2251500D6212C /* Medium Practice.h */,
+				1B9B254D20E767D000453585 /* Hard Practice.h */,
 			);
 			path = "Practice 1";
 			sourceTree = "<group>";

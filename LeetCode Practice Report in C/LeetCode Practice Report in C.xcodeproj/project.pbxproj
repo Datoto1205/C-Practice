@@ -29,6 +29,7 @@
 		1B1FB84120E7266700B7C3A5 /* jewels and Stones.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jewels and Stones.h"; sourceTree = "<group>"; };
 		1B1FB84220E72FE600B7C3A5 /* judgeCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = judgeCircle.h; sourceTree = "<group>"; };
 		1B1FB84320E737C400B7C3A5 /* reverseString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverseString.h; sourceTree = "<group>"; };
+		1B9B254E20E7C41B00453585 /* addTwoNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addTwoNumbers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				1B1FB84120E7266700B7C3A5 /* jewels and Stones.h */,
 				1B1FB84220E72FE600B7C3A5 /* judgeCircle.h */,
 				1B1FB84320E737C400B7C3A5 /* reverseString.h */,
+				1B9B254E20E7C41B00453585 /* addTwoNumbers.h */,
 			);
 			path = "LeetCode Practice Report in C";
 			sourceTree = "<group>";

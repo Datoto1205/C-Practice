@@ -23,4 +23,9 @@ int printOutParagraphBetweenQuestionTwoAndThree(void) {
     return 0;
 }
 
+int printOutParagraphBetweenQuestionThreeAndFour(void) {
+    printf("\nQuestion 4 (no. 2): Add Two Numbers\n(The details of this question is on the website at https://leetcode.com/problems/add-two-numbers/description/ )\n(Notice: You only could type three numbers in each number series, and you could only type single number each time, or the code would crash!)\n\nComplier result:\n" );
+    return 0;
+}
+
 #endif /* instruction_text_h */

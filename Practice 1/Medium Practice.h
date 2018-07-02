@@ -1,10 +1,14 @@
-//
+
 //  Medium Practice.h
-//  Practice 1
 //
-//  Created by 李政恩 on 26/06/2018.
-//  Copyright © 2018 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En on 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
+//  ---------------------<Outline>---------------------
+//  Convey the value through the function.     <Row 21>
+//  Print some value to the file of txt.       <Row 38>
+//  Struct                                     <Row 76>
+//  Switch                                    <Row 116>
 
 #ifndef Medium_Practice_h
 #define Medium_Practice_h
@@ -106,6 +110,33 @@ int initializeInformationOfMyExGirlfriend(void) {
 // 2. After we declare the architecture of the struct, we could give names and values to the struct (initialization); we even could use matrix & loop to do it more conveniently.
 // 3. Remember to add ";" at the end of struct.
 // 4. We need to use strcpy() function to assign the string data to the struct, or we would face the warning if we use the normal printf() function.
+
+
+
+// Switch
+int practiceToUseSwitch(int grade) {
+    switch (grade) {
+        case 0 ... 40:
+            printf("%s", "Go die! \n\n");
+            break;
+        case 41 ... 60:
+            printf("%s", "Try your best! \n\n");
+            break;
+        case 61 ... 80:
+            printf("%s", "You could be better! \n\n");
+            break;
+        case 81 ... 90:
+        case 91 ... 100:
+            printf("%s", "Good job! \n\n");
+            break;
+        default:
+            break;
+    }
+    
+    return 0;
+}
+// I could use switch to simplify the code and inhance the efficiency of the codes without "if & else".
+// However, it seems that I could only could use switch to compare the numbers. I could not type "string & character" in the case part in the switch. To get more information of it, please visit the website at https://stackoverflow.com/questions/4014827/best-way-to-switch-on-a-string-in-c
 
 
 

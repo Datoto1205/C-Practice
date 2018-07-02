@@ -1,8 +1,7 @@
 //
 //  main.c
-//  Practice 1
 //
-//  Created by Li Cheng-En on 07/06/2018.
+//  Created by Li Cheng-En on 2018.
 //  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
@@ -13,6 +12,7 @@
 #include "math.h"
 #include "Basic Practice.h"
 #include "Medium Practice.h"
+#include "Hard Practice.h"
 
 // Practice Hello world! & Main Function
 int main(void) {
@@ -32,9 +32,11 @@ int main(void) {
     ninetyNineMultiplicationTable();
     showTheSeriesOfOddNumber();
     arrayWithSingleDimension();
-    //requireUserToGiveDataOfNameAndAge();
     createArraysWithTwoDimension();
-    //searchTheStringInArray() It's too hard...
+    //requireUserToGiveDataOfNameAndAge();   /* I disable this code because I did not want to type something.*/
+    //AskUsersToTypeTheValue();   /* I disable this code because I did not want to type something.*/
+    
+    searchTheStringInArray();
     initializeInformationOfMyExGirlfriend();
     
     
@@ -42,7 +44,14 @@ int main(void) {
     printf("\nExternal integer is : %d \n", externalInteger);
     changeTheExternalInteger();
     printf("Another external integer is : %d \n \n", anotherExternalInteger);
-    printOutToTXTFile();
+    //printOutToTXTFile();
+    practiceToUseSwitch(65);
+    
+    fetchTheAddressOfVariableInMemory();
+    usingThePointerOfVariable();
+    pointerAndArray();
+    pointerAndStringFirst();
+    pointerAndStringSecond();
     
     return 0;
 }

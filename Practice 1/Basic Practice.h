@@ -1,22 +1,24 @@
-//
+
 //  Basic Practice.h
 //
-//  Created by Li Cheng-En on 19/06/2018.
+//  Created by Li Cheng-En on 2018.
 //  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 //  ---------------------<Outline>---------------------
-//  Declaration                                <Row >
-//  For-loop                                   <Row >
-//  Double For-loop & If                       <Row >
-//  Break And Skip The Loop                    <Row >
-//  Array with Single Dimension                <Row >
-//  Ask User To Type The Value                 <Row >
+//  Declaration                                <Row 25>
+//  For-loop                                   <Row 44>
+//  Double For-loop & If                       <Row 59>
+//  Break And Skip The Loop                    <Row 81>
+//  Array with Single Dimension                <Row 99>
+//  Array                                     <Row 117>
+//  Ask User To Type The Value(1)             <Row 162>
+//  Ask User To Type The Value(2)             <Row 181>
+//  Search The String                         <Row 203>
 
 #ifndef Basic_Practice_h
 #define Basic_Practice_h
 
 // I need to put my functions I want to use in seperated header file, or I would implicitely declare the function which is not valid. I also could type this code before the function of main, but it is a little bit wierd. To get more information about this issue, please visit the website at "https://stackoverflow.com/questions/15850042/xcode-warning-implicit-declaration-of-function-is-invalid-in-c99".
-
 
 
 
@@ -35,6 +37,7 @@ int practiceDeclareSomeVariables(void) {
 }
 // 1. In C, the type of data included integer, float and character.
 // 2. If I want to declare a string, remember that the string is a kind of matrix of characters, so I need to add "[]".
+// 3. There is no any function I could use to get the type of variable directly in c.
 
 
 
@@ -106,26 +109,8 @@ int arrayWithSingleDimension(void) {
     return 0;
 }
 // 1. I could create an array by adding "[]" in the end of the name of the variables. Remember that you need to add "*" before the name of the variables when you want to declare an array of string.
-// 2. To get more information about the array of character and that of string, please visit the website at "https://stackoverflow.com/questions/8732325/how-to-declare-strings-in-c".
-
-
-
-// Ask User To Type The Value
-int requireUserToGiveDataOfNameAndAge(void) {
-    int requiredDouble;
-    char *requireNameString[50];
-    
-    printf("Please enter your name without dash or space: ");
-    scanf("%s", requireNameString[0]);
-    printf("Please enter the number of your age: ");
-    scanf("%d", &requiredDouble);
-    
-    printf("%s are %d years old! \n", requireNameString[0], requiredDouble);
-    
-    return 0;
-}
-// 1. Function "scanf(type, variable)" is used to ask user to type the data manually.
-// 2. We need to add "&" before the name of the variables when we want to change the data of double variable on the scanf() function, or the value could not be edited.
+// 2. "*" means pointer of variable, please refer to the "Hard Practice.h" file to learn some knowledge about it.
+// 3. To get more information about the array of character and that of string, please visit the website at "https://stackoverflow.com/questions/8732325/how-to-declare-strings-in-c".
 
 
 
@@ -172,19 +157,73 @@ int createArraysWithTwoDimension(void) {
 // 2. When we want to print out the matrix, we need to print out the element of the matrix respectively.
 // 3. We could use "\t" to indent the string.
 
-/*int searchTheStringInArray(void) {
-    char *sourceOfStringArray[] = {"I", "you"};
-    char *theStringIWantToSearch[] = {"you"};
+
+
+// Ask User To Type The Value (1)
+int requireUserToGiveDataOfNameAndAge(void) {
+    int requiredDouble;
+    char *requireNameString[50];
     
-    int strcmp(sourceOfStringArray, theStringIWantToSearch);
+    printf("Please enter your name without dash or space: ");
+    scanf("%s", requireNameString[0]);
+    printf("Please enter the number of your age: ");
+    scanf("%d", &requiredDouble);
     
-    char* strchr(theStringIWantToSearch, sourceOfStringArray);
-    //int resultOfSearchInStringArray =
-    printf("%d", resultOfSearchInStringArray);
+    printf("%s are %d years old! \n", requireNameString[0], requiredDouble);
+    
     return 0;
-}*/
+}
+// 1. Function "scanf(type, variable)" is used to ask user to type the data manually.
+// 2. We need to add "&" before the name of the variables when we want to change the data of double variable on the scanf() function, or the value could not be edited.
 
 
+
+// Ask User To Type The Value (2)
+int AskUsersToTypeTheValue(void) {
+    char TheWordIWantToSayToMyFriend[50];
+    char TheSentenceIWantToSayToMyFriend[100];
+    
+    fgets(TheSentenceIWantToSayToMyFriend, (sizeof(TheSentenceIWantToSayToMyFriend) / sizeof(TheSentenceIWantToSayToMyFriend[0])), stdin);
+    printf("%s", TheSentenceIWantToSayToMyFriend);
+    
+    scanf("%s", TheWordIWantToSayToMyFriend);
+    printf("%s \n", TheWordIWantToSayToMyFriend);
+    //gets(TheSentenceIWantToSayToMyFriend);     Error would occure if you run this code.
+    
+    return 0;
+}
+// 1. fgets() function could be used to ask user to type something.
+// 2. scanf() function could be used to ask users to type something, too. However, the disadvantages of it were more than that of fgets() function. First of all, it is less secure. Moreover, it only would show "one" words & string & number; it would see space & return as a sign of the end of the function. Thus, I had better avoid to use scanf() function.
+// 3. I had better not to use gets() function, the reason is that if user type too much things or I assume that the users would type too more things, I would face warnings, and the program would end immediately.
+// 4. I had better not to put the fgets() function behind the scanf() function, the fact is that the output of scanf() function would involve a "\n", which may disable the fgets() behind the scanf()/
+// 5. To get more information about the suspension of program because of the relative order of fgets() and scanf() function, please visit the website at https://stackoverflow.com/questions/4929338/problem-with-scanf-and-fgets or https://www.ptt.cc/bbs/C_and_CPP/M.1310481378.A.137.html
+
+
+
+// Search The String
+int searchTheStringInArray(void) {
+    char sourceOfStringArray[] = "ABCDEFGHIJ";
+    char theStringIWantToCompare[] = "JACKY";
+    char anotherStringIWantToCompare[] = "ABCDEFGHIJ";
+    
+    printf("result: %d \n", strcmp(sourceOfStringArray, theStringIWantToCompare));
+    printf("result: %d \n", strcmp(sourceOfStringArray, anotherStringIWantToCompare));
+    
+    
+    char theStringIWantToSearch = 'C';
+    printf("%lu \n", strchr(sourceOfStringArray, theStringIWantToSearch));
+    
+    for (int i = 0; i < strlen(sourceOfStringArray); i++) {
+        if (theStringIWantToSearch == sourceOfStringArray[i]) {
+            printf("%d", i + 1);
+        }
+    } /* It could be used to mock the rationale of strstr() function. */
+    
+    return 0;
+}
+// 1. strcmp() function could be used to compare two strings. If these two strings are the same, then the output would be 0, or the output would be some positive numbers or negative numbers.
+// 2. strchr() function could be used to track whether there's any the same element in the original longer string. If the answer is yes, then the output would be the address of that element in that string, or the output would be null.
+// 3. It seems that strstr() function could be used to check whether there's any the same element in the original longer string, too. If the answer is yes, then the output of this function would be the order of the same element in that original string. However, it is a little hard for me to use this function. Therefore, I used another way, which is the combination of for-loop and if, to substitute strstr() function.
 
 
 
