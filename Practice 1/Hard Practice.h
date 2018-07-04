@@ -106,7 +106,7 @@ int pointerAndStringFirst(void) {
 
 
 // Pointer And String (2)
-int pointerAndStringSecond(void) {
+void pointerAndStringSecond(void) {
     
     /* Process the string */
     char *theCountriesIVisitedBefore[6] = {"Germany", "Singapore", "Vietnam", "China", "Japan"};
@@ -130,8 +130,6 @@ int pointerAndStringSecond(void) {
     for (int i = 0; i < 4; i++) {
         printf("%s \t %s \n", theUniversityIWantToStudy[i][0], theUniversityIWantToStudy[i][1]);
     }
-    
-    return 0;
 }
 // After we use the pointer, we could create single-dimension string array and two-dimensions array more easily.
 

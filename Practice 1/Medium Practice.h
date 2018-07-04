@@ -135,8 +135,48 @@ int practiceToUseSwitch(int grade) {
     
     return 0;
 }
-// I could use switch to simplify the code and inhance the efficiency of the codes without "if & else".
-// However, it seems that I could only could use switch to compare the numbers. I could not type "string & character" in the case part in the switch. To get more information of it, please visit the website at https://stackoverflow.com/questions/4014827/best-way-to-switch-on-a-string-in-c
+// 1. I could use switch to simplify the code and inhance the efficiency of the codes without "if & else".
+// 2. However, it seems that I could only could use switch to compare the numbers. I could not type "string & character" in the case part in the switch. To get more information of it, please visit the website at https://stackoverflow.com/questions/4014827/best-way-to-switch-on-a-string-in-c
+// 3. "A ... B" means that runing from number A to number B.
+
+
+
+// Different Type of Function
+char *practiceDeclareAFunctionWithCharacterType(int age) {
+    char *whetherYouCouldMarryWithOther;
+    
+    switch (age) {
+        case 0 ... 18:
+            whetherYouCouldMarryWithOther = "no \n";
+            break;
+            
+        default:
+            whetherYouCouldMarryWithOther = "yes \n";
+            break;
+    }
+    
+    return whetherYouCouldMarryWithOther;
+}
+
+void practiceDeclareAFunctionWithVoidType(void) {
+    puts("Nothing was happened! \n");
+}
+// 1. We not only could declare a function with integer type, but we also could declare a function with other types, such as character and void. But remember that the type of the value the function return need to be as the same as that of the function.
+// 2. Admittedly, we could declare the functions with different type, but the type of main() function only could be integer.
+
+
+
+// Passing An Array To The Function
+int theMoneyICouldGet(int *Array) {
+    Array[0] = Array[0] + 1;
+    Array[1] = Array[1] + 2;
+    Array[2] = Array[2] + 3;
+    
+    return *Array;
+}
+// 1. I need to declare the input array in elsewhere.
+// 2. Notice the order in the [] part.
+// 3. The meaning of "*Array" equals to that of "Array[]".
 
 
 

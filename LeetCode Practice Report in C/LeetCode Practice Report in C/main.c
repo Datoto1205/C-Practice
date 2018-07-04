@@ -16,9 +16,10 @@
 #include "judgeCircle.h"
 #include "reverseString.h"
 #include "addTwoNumbers.h"
+#include "twoSum.h"
+
 
 int main(void) {
-    
     printOutParagraphOne();
     
     numJewelsInStones("aA", "aAAbbbb");
@@ -38,7 +39,19 @@ int main(void) {
     reverseString("net");
     
     printOutParagraphBetweenQuestionThreeAndFour();
-    addTwoNumbers();
+    //addTwoNumbers();
     
+    printOutParagraphBetweenQuestionFourAndFive();
+    for (int i = 0; i < 2; i++) {
+        FinalOutputArray[i] = twoSum(inputArray, 4, 9)[i];
+    }
+    printf("\n[ %d\t, %d\t] \n", FinalOutputArray[0], FinalOutputArray[1]);
+    
+    for (int i = 0; i < 2; i++) {
+        FinalOutputArray[i] = twoSum(inputArray, 4, 18)[i];
+    }
+    printf("\n[ %d\t, %d\t] \n", FinalOutputArray[0], FinalOutputArray[1]);
+    
+    printOutLastParagraph();
     return 0;
 }

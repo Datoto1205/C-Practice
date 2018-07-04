@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B1D58DE20EC7EF200CD5BAD /* twoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoSum.h; sourceTree = "<group>"; };
 		1B1FB83620E5FFCB00B7C3A5 /* LeetCode Practice Report in C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode Practice Report in C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1FB83920E5FFCB00B7C3A5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1B1FB84020E724D800B7C3A5 /* instruction text.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "instruction text.h"; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 				1B1FB84220E72FE600B7C3A5 /* judgeCircle.h */,
 				1B1FB84320E737C400B7C3A5 /* reverseString.h */,
 				1B9B254E20E7C41B00453585 /* addTwoNumbers.h */,
+				1B1D58DE20EC7EF200CD5BAD /* twoSum.h */,
 			);
 			path = "LeetCode Practice Report in C";
 			sourceTree = "<group>";

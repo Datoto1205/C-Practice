@@ -16,6 +16,10 @@
 
 // Practice Hello world! & Main Function
 int main(void) {
+    char *returnString;
+    int inputArray[] = {50, 100, 150};
+    
+    
     printf("Hello, World!");
     printf(" I did not want to change the row.\n");
     printf("\n");
@@ -47,6 +51,14 @@ int main(void) {
     //printOutToTXTFile();
     practiceToUseSwitch(65);
     
+    returnString = practiceDeclareAFunctionWithCharacterType(17);
+    puts(returnString);
+    practiceDeclareAFunctionWithVoidType();
+    theMoneyICouldGet(inputArray);
+    for (int i = 0; i <= 2; i++) {
+        printf("%d", inputArray[i]);
+    }
+    
     fetchTheAddressOfVariableInMemory();
     usingThePointerOfVariable();
     pointerAndArray();
@@ -63,6 +75,7 @@ int main(void) {
 // 6. I could use printf function to print what I want to the console. Remember that I could not use print function instead, while it is available in swift.
 // 7. If you want to print out a double after a short text, you need to type "%d" in the end of the text. In the same way, you need to type "%i" if you want to add a integer after a short text.
 // 8. We could use "extern" to call the variable located in other parts of this codes without calling any function.
+// 9. When you faced the error warning "Function definition is not allowed here", please check whether you forget to type " " ".
 
 // To get more information about how to export the content in the console into .txt file, please visit the website at https://blog.csdn.net/zhujianing1993/article/details/63687459
 
