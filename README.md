@@ -22,6 +22,14 @@ In order to learn the knowledge about procedure-oriented, I tried to learn how t
 4. Run the code.
 5. Check the txt file.
 
+
+
+
+![uououououououo](https://user-images.githubusercontent.com/32284698/42263627-32066aa2-7fa1-11e8-994f-01ae42159f59.png)
+
+
+【 Notice 】After you finished running all of my codes in the file 'LeetCode Practice Report in C.xcodeproj', you should right click the 'LeetCode Practice Report in C' with terminal icon, and choose 'Show in Finder' to check the final report of this file.
+
 ### Authors
 
 [Li Cheng-En](https://www.linkedin.com/in/li-cheng-en/)
