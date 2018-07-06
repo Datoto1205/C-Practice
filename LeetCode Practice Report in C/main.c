@@ -2,7 +2,8 @@
 //  main.c
 //  LeetCode Practice Report in C
 //
-//  Created by 李政恩 on 29/06/2018.
+//  Created by Li Cheng-En on 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 #include <stdio.h>
@@ -20,6 +21,8 @@
 
 
 int main(void) {
+    freopen("output of LeetCode Practice Report in C.txt","w",stdout);
+    
     printOutParagraphOne();
     
     numJewelsInStones("aA", "aAAbbbb");
@@ -39,7 +42,7 @@ int main(void) {
     reverseString("net");
     
     printOutParagraphBetweenQuestionThreeAndFour();
-    //addTwoNumbers();
+    addTwoNumbers();
     
     printOutParagraphBetweenQuestionFourAndFive();
     for (int i = 0; i < 2; i++) {
@@ -53,5 +56,6 @@ int main(void) {
     printf("\n[ %d\t, %d\t] \n", FinalOutputArray[0], FinalOutputArray[1]);
     
     printOutLastParagraph();
+    
     return 0;
 }

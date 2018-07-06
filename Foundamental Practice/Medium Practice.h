@@ -69,7 +69,7 @@ int printOutToTXTFile(void) {
 // 3. I could use strlen() function to get the length of a string matrix, but I need to apply the string.h file first.
 // 4. Remember to assign the restricted maximum of the length of the string matrix, or you would find bug when you use the strlen() function.
 // 5. I could not use freopen() to print the contents in the txt file successfully here.
-// 6. To get more information about how to print out some content to the txt file, please visit the website at https://stackoverflow.com/questions/11573974/write-to-txt-file
+// 6. To get more information about how to print out some content to the txt file, please visit the website at https://stackoverflow.com/questions/11573974/write-to-txt-file or https://www.zhihu.com/question/30662049
 
 
 

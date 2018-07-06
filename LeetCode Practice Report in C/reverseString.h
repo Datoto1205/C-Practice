@@ -2,7 +2,8 @@
 //  reverseString.h
 //  LeetCode Practice Report in C
 //
-//  Created by 李政恩 on 30/06/2018.
+//  Created by Li Cheng-En on 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 #ifndef reverseString_h

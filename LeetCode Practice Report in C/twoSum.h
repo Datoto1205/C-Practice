@@ -2,7 +2,8 @@
 //  twoSum.h
 //  LeetCode Practice Report in C
 //
-//  Created by 李政恩 on 04/07/2018.
+//  Created by Li Cheng-En on 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 #ifndef twoSum_h
