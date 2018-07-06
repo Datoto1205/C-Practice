@@ -12,13 +12,13 @@ In order to learn the knowledge about procedure-oriented, I tried to learn how t
 #### Check my process of learning C
 1. Download and decompress the ZIP file of this project.
 2. Open Xcode > File > Open...
-3. Enter the folder of 'C-Practice', and choose the file 'Practice 1.xcodeproj'.
+3. Enter the folder of 'C-Practice', and choose the file 'Foundamental Practice.xcodeproj'.
 4. Run the code.
 
 #### Check my codes to some programming questions of LeetCode
 1. Download and decompress the ZIP file of this project.
 2. Open Xcode > File > Open...
-3. Enter the folder of 'C-Practice' > 'LeetCode Practice Report in C', and choose the file 'LeetCode Practice Report in C.xcodeproj'.
+3. Enter the folder of 'C-Practice', and choose the file 'LeetCode Practice Report in C.xcodeproj'.
 4. Run the code.
 5. Check the txt file.
 
